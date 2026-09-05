@@ -1,0 +1,41 @@
+/* Styling for Category Dropdown Menu */
+nav ul li.dropdown {
+    position: relative;
+}
+
+nav ul li .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #ffffff;
+    min-width: 220px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.15);
+    border-radius: 6px;
+    padding: 10px 0;
+    z-index: 1000;
+}
+
+nav ul li .dropdown-menu li {
+    display: block;
+    margin: 0;
+}
+
+nav ul li .dropdown-menu li a {
+    color: #333333;
+    padding: 10px 18px;
+    font-size: 14px;
+    display: block;
+    text-align: left;
+    transition: background 0.3s;
+}
+
+nav ul li .dropdown-menu li a:hover {
+    background-color: #f8f9fa;
+    color: #e91e63;
+}
+
+/* បង្ហាញ Menu ពេល Hover */
+nav ul li.dropdown:hover .dropdown-menu {
+    display: block;
+}
